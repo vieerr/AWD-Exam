@@ -1,0 +1,17 @@
+<div class="speedometer-container">
+  <div class="speed-display {{ getSpeedClass() }}">
+    <div class="speed-value">{{ speed }}</div>
+    <div class="speed-unit">km/h</div>
+  </div>
+
+  <div class="controls">
+    <button (click)="accelerate()" class="btn accelerate">Acelerar</button>
+    <button (click)="brake()" class="btn brake">Frenar</button>
+    <button (click)="reset()" class="btn reset">Reiniciar</button>
+  </div>
+
+  <div class="speed-bar">
+    <!-- <div class="speed-progress" [style.width]="getSpeedPercentage() + '%'" ></div> -->
+    <div class="speed-progress" [style.width]="getSpeedPercentage() + '%'" [ngClass]="getSpeedClass()"></div>
+  </div>
+</div>
