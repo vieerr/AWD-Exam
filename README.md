@@ -1,5 +1,24 @@
 # PaspuelOlivierEx2Contador
 
+## Dockerización
+
+Con esto se puede correr en local
+
+```bash
+
+docker build -t vierpaspuel/examen-paspuel:v1 .
+
+docker run -d -p 8080:80 vierpaspuel/examen-paspuel:v1
+```
+
+Para subir la imagen despues del login por CLI:
+
+```bash
+docker push vierpaspuel/examen-paspuel:v1
+```
+
+Nota: Reemplazar por su usuario
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
 
 ## Development server

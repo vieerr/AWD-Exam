@@ -1,0 +1,6 @@
+docker build -t vierpaspuel/examen-paspuel:v1 .
+
+docker run -d -p 8080:80 vierpaspuel/examen-paspuel:v1
+
+docker push vierpaspuel/examen-paspuel:v1
+
